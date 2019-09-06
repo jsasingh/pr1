@@ -1,0 +1,492 @@
+#about
+{
+    position: relative;
+    background: rgba($yellowColor,1) url(../images/bg-masthead.jpg) left bottom;      
+    .va::before {
+        content: "";
+        display: block;
+        position: absolute;
+        bottom: -18%;
+        left: 0;
+        right: 0;
+        height: 54%;
+        transform: skewY(-9deg);
+        background: linear-gradient(to right, rgba(11,84,164,0.67) 0, rgba(11,84,164,0.67) 10%, rgba(0,174,239,0.67) 77%, rgba(0,174,239,0.67) 100%);
+    } 
+   
+    
+    .tools_expert
+    {
+        box-shadow: 0px 8px 30px 0px rgba(153, 153, 153, 0.1);
+        padding: 50px 35px;
+        h3
+        {
+            color:$whiteColor;
+            font: 60px/92px $rale;
+            font-weight: 100;
+            span{color: $dip;}
+        }
+        .skill_main
+        {
+            .skill_item
+            {
+                margin-bottom: 18px;
+                &:last-child
+                {
+                    margin-bottom: 0px;
+                }
+                h4
+                {
+                    text-align: right;
+                    font-size: 14px;
+                    font-family: $rob;
+                    font-weight: normal;
+                    color: $whiteColor;
+                    margin-bottom: 15px;
+                }
+                .progress
+                {
+                    height: 20px;
+                    border-radius: 0px;
+                    background: transparent;
+                    border:1px solid #eeeeee;
+                    padding-left: 5px;
+                    padding-right: 5px;
+                    box-shadow: 0px 20px 20px 0px rgba(132, 144, 255, 0.2);
+                    .progress-bar
+                    {
+                        width: 0%;
+                        transition: width .6s ease;
+                        height: 10px;
+                        border-radius: 0px;
+                        vertical-align: middle;
+                        align-self: center;
+                        background-image: -moz-linear-gradient( 0deg, rgb(255,255,255) 0%, rgb(0,0,0) 100%);
+                        background-image: -webkit-linear-gradient( 0deg, rgb(255,255,255) 0%, rgb(0,0,0) 100%);
+                        background-image: -ms-linear-gradient( 0deg, rgb(255,255,255) 0%, rgb(0,0,0) 100%);
+                    }
+                }
+            }
+        }
+    }
+}
+
+#service
+{
+    background: #a9a9a9;
+    background:linear-gradient(90deg,#27e2de 0,#2974ef);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#27e2de",endColorstr="#2974ef",GradientType=1);
+     h2
+    {
+        color:$whiteColor;
+        font: 60px/92px $rale;
+        font-weight: 100;
+        span{color: $dip;}
+    }
+   
+     
+    .ch-grid 
+    {
+        margin: 20px 0 0 0;
+        padding: 0;
+        list-style: none;
+        display: block;
+        text-align: center;
+        width: 100%;
+        &::after
+        {
+            content: '';
+            display: table; 
+            clear: both;
+        }
+        li
+        {
+           width: 220px;
+            height: 220px;
+            display: inline-block;
+            margin: 20px;
+        
+            .ch-item
+            {
+                width: 100%;
+                height: 100%;
+                border-radius: 50%;
+                position: relative;
+                box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+                cursor: default;
+                &::before
+                {
+                    content: '';
+                    display: table;
+                }
+                .ch-info-wrap
+                {
+                    position: absolute;
+                    width: 180px;
+                    height: 180px;
+                    border-radius: 50%;
+
+                    -webkit-perspective: 800px;
+                    -moz-perspective: 800px;
+                    -o-perspective: 800px;
+                    -ms-perspective: 800px;
+                    perspective: 800px;
+
+                    -webkit-transition: all 0.4s ease-in-out;
+                    -moz-transition: all 0.4s ease-in-out;
+                    -o-transition: all 0.4s ease-in-out;
+                    -ms-transition: all 0.4s ease-in-out;
+                    transition: all 0.4s ease-in-out;
+
+                    top: 20px;
+                    left: 20px;
+                    background: #f9f9f9 url(../images/bg.jpg);
+                    box-shadow: 
+                        0 0 0 20px rgba(255,255,255,0.2), 
+                        inset 0 0 3px rgba(115,114, 23, 0.8);
+                    .ch-info
+                    {
+                        position: absolute;
+                        width: 180px;
+                        height: 180px;
+                        border-radius: 50%;
+
+                        -webkit-transition: all 0.4s ease-in-out;
+                        -moz-transition: all 0.4s ease-in-out;
+                        -o-transition: all 0.4s ease-in-out;
+                        -ms-transition: all 0.4s ease-in-out;
+                        transition: all 0.4s ease-in-out;
+
+                        -webkit-transform-style: preserve-3d;
+                        -moz-transform-style: preserve-3d;
+                        -o-transform-style: preserve-3d;
+                        -ms-transform-style: preserve-3d;
+                        transform-style: preserve-3d;
+                        div{
+                            	display: block;
+                                position: absolute;
+                                width: 100%;
+                                height: 100%;
+                                border-radius: 50%;
+                                background-position: center center;
+
+                                -webkit-backface-visibility: hidden;
+                                -moz-backface-visibility: hidden;
+                                -o-backface-visibility: hidden;
+                                -ms-backface-visibility: hidden;
+                                backface-visibility: hidden;
+                        }
+                        .ch-info-back 
+                        {
+                            -webkit-transform: rotate3d(0,1,0,180deg);
+                            -moz-transform: rotate3d(0,1,0,180deg);
+                            -o-transform: rotate3d(0,1,0,180deg);
+                            -ms-transform: rotate3d(0,1,0,180deg);
+                            transform: rotate3d(0,1,0,180deg);
+                            background: #000;
+                        }
+                        h3
+                        {
+                         color: #fff;
+                        text-transform: uppercase;
+                        letter-spacing: 2px;
+                        font-size: 14px;
+                        margin: 0 15px;
+                        padding: 40px 0 0 0;
+                        height: 90px;
+                        font-family: 'Open Sans', Arial, sans-serif;
+                        text-shadow: 
+                            0 0 1px #fff, 
+                            0 1px 2px rgba(0,0,0,0.3);   
+                        }
+                        p
+                        {
+                            color: #fff;
+                            padding: 10px 5px;
+                            font-style: italic;
+                            margin: 0 30px;
+                            font-size: 12px;
+                            border-top: 1px solid rgba(255,255,255,0.5);
+                            a
+                            {
+                                display: block;
+                                color: #fff;
+                                color: rgba(255,255,255,0.7);
+                                font-style: normal;
+                                font-weight: 700;
+                                text-transform: uppercase;
+                                font-size: 9px;
+                                letter-spacing: 1px;
+                                padding-top: 4px;
+                                font-family: 'Open Sans', Arial, sans-serif;
+                                &:hover
+                                {
+                                    
+	                               color: rgba(255,242,34, 0.8);
+                                }
+                            }
+                        }
+                    }
+                }
+                 &:hover
+                {
+                    .ch-info-wrap {
+                        box-shadow: 
+                            0 0 0 0 rgba(255,255,255,0.8), 
+                            inset 0 0 3px rgba(115,114, 23, 0.8);
+                    }
+                    .ch-info {
+                        -webkit-transform: rotate3d(0,1,0,-180deg);
+                        -moz-transform: rotate3d(0,1,0,-180deg);
+                        -o-transform: rotate3d(0,1,0,-180deg);
+                        -ms-transform: rotate3d(0,1,0,-180deg);
+                        transform: rotate3d(0,1,0,-180deg);
+                    }
+
+                }
+            }
+        }
+    }
+
+        .ch-img-1 { 
+            background-image: url(../images/1.png);
+        }
+
+        .ch-img-2 { 
+            background-image: url(../images/2.png);
+        }
+
+        .ch-img-3 { 
+            background-image: url(../images/3.png);
+        }
+        .ch-img-4 { 
+            background-image: url(../images/4.png);
+        }
+        .ch-img-5 { 
+            background-image: url(../images/5.png);
+        }
+        .ch-img-6 { 
+            background-image: url(../images/6.png);
+        }
+        .ch-img-7 { 
+            background-image: url(../images/7.png);
+        }
+        .ch-img-8 { 
+            background-image: url(../images/8.png);
+        }  
+  
+}
+#portfolio
+{
+    padding-bottom: 50px;
+    background-color:rgba($blackColor,0.9);
+  h2
+        {
+            color:$whiteColor;
+            font: 60px/92px $rale;
+            font-weight: 100;
+            span{color: $baseColor;}
+        } 
+    .projects_fillter{
+	.filter{
+		text-align: center;
+		margin-top: 70px;
+		margin-bottom: 50px;
+		li{
+			display: inline-block;
+			margin-right: 30px;
+			a{
+				font-size: 16px;
+				font-family: $rob;
+				color: $pfont;
+			}
+			&:last-child{
+				margin-right: 0px;
+			}
+			&.active{
+				a{
+					color: $baseColor;
+				}
+			}
+		}
+	}
+}
+    
+.projects_inner{
+	margin-bottom: -30px;
+}    
+    .projects_item{
+	position: relative;
+	border-radius: 5px;
+	overflow: hidden;
+	margin-bottom: 30px;
+	&:before{
+		content: "";
+		background: rgba(255, 255, 255, .80);
+		position: absolute;
+		left: 0px;
+		top: 0px;
+		width: 100%;
+		height: 100%;
+		opacity: 0;
+		transition: all 300ms ease;
+	}
+	.projects_text{
+		position: absolute;
+		left: 0px;
+		bottom: 0px;
+		background-color: rgba(0,0,0,0.8);
+        width: 100%;
+        padding: 10px 15px;
+		h4{
+			font-size: 21px;
+			font-family: $hee;
+			font-weight: bold;
+			color: $whiteColor;
+			margin-bottom: 5px;
+			@include transition;
+			text-transform: uppercase;
+			cursor: pointer;
+		}
+		p{
+			margin-bottom: 0px;
+			font-size: 14px;
+            color: $whiteColor;
+		}
+	}
+	&:hover{
+		&:before{
+			opacity: 1;
+		}
+		.projects_text{
+			h4{
+				background: linear-gradient(to right, #8490ff 0%, #62bdfc 70%);
+				-webkit-background-clip: text;
+				-webkit-text-fill-color: transparent;
+			}
+		}
+	}
+}
+}
+#contact
+{
+    background: #a9a9a9;
+    background:linear-gradient(90deg,#27e2de 0,#2974ef);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#27e2de",endColorstr="#2974ef",GradientType=1);
+     h2
+        {
+            color:$whiteColor;
+            font: 60px/92px $rale;
+            font-weight: 100;
+            text-align: center;
+            span{color: $baseColor;}
+        } 
+    
+#simpleSlides {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 250px;
+}
+
+#simpleSlides ul {
+  list-style: none;
+  width: 100%;
+  height: 250px;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+#simpleSlides li {
+  width: 100%;
+  height: 250px;
+  float: left;
+  text-align: center;
+  position: relative;
+  font-family: lato, sans-serif;
+}
+
+/* Styling for prev and next buttons */
+
+.simpleBtn-bar {
+  width: 150px;
+  margin: 0 auto;
+  display: block;
+  position: relative;
+ 
+}
+
+ 
+
+#simpleButtons a {
+  text-align: center;
+  display: block;
+  font-size: 50px;
+  float: left;
+  outline: 0;
+  margin: 0 20px;
+  color: #ffee0c;
+  text-decoration: none;
+  display: block;
+  padding: 9px;
+  width: 35px;
+}
+
+a#prev:hover,
+a#next:hover {
+  color: #FFF;
+  text-shadow: .5px 0px #b14943;
+}
+
+.quote-phrase,
+.quote-author {
+  font-family: sans-serif;
+  font-weight: 300;
+  display: table-cell;
+  vertical-align: middle;
+  padding: 5px 20px;
+  font-family: 'Lato', Calibri, Arial, sans-serif;
+}
+
+.quote-phrase {
+  height: 200px;
+  font-size: 24px;
+  color: #FFF;
+  font-style: italic;
+  text-shadow: .5px 0px #b14943;
+}
+
+.quote-marks {
+  font-size: 30px;
+  padding: 0 3px 3px;
+  position: inherit;
+}
+
+.quote-author {
+  font-style: normal;
+  font-size: 20px;
+  color: #ffee0c;
+  font-weight: 400;
+  height: 30px;
+}
+
+.quoteContainer,
+.authorContainer {
+  display: table;
+  width: 100%;
+}
+   
+    
+}
+
+@media screen and (max-width:767px)
+{
+    #portfolio .projects_fillter .filter{padding: 0;    margin: 0 0 30px;}
+    #portfolio h2,#contact h2,#about .tools_expert h3,#service h2 {
+    font: 32px/92px "Raleway";
+}
+    .home_banner_area .banner_inner .banner_content h2 {
+    font-size: 30px;
+}
+}
